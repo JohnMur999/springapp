@@ -12,12 +12,21 @@ public class User {
     @GeneratedValue (strategy = GenerationType.IDENTITY)
 
     private Long id;
-    private String name;
+    private String username;
     private String password;
     private String roles;
+    private boolean enabled;
 
-    public String getName() {
-        return name;
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public String getUsername() {
+        return username;
     }
 
     public String getPassword() {
@@ -28,8 +37,8 @@ public class User {
         return roles;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String name) {
+        this.username = name;
     }
 
     public void setPassword(String password) {

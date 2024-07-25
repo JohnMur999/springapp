@@ -1,6 +1,5 @@
 package com.johnmur.springapp.service;
 
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -15,8 +14,7 @@ public class MyUserDetailsService implements UserDetailsService {
                     User.withUsername("user").password("{noop}password")
                     .roles("USER")
                     .build();
-        }
-        else {
+        } else {
             throw new UsernameNotFoundException("User not found");
         }
     }
