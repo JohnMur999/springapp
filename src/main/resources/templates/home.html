@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+        }
+        .header {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Welcome to the Home Page</h1>
+        <p>Welcome to our application. Please use the navigation below to explore our site.</p>
+    </div>
+
+    <div class="navigation">
+        <ul class="list-unstyled">
+            <li>
+                <a href="/login" class="btn btn-primary">Login</a>
+            </li>
+            <li>
+                <a href="/register" class="btn btn-secondary">Register</a>
+            </li>
+            <li>
+                <a href="/profile" class="btn btn-info">Profile</a>
+            </li>
+            <li>
+                <a href="/todos" class="btn btn-success">Todo List</a>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer mt-4">
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

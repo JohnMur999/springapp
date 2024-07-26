@@ -3,7 +3,6 @@ package com.johnmur.springapp.service;
 import com.johnmur.springapp.entity.User;
 import com.johnmur.springapp.repos.UserRepo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 

@@ -1,0 +1,125 @@
+/* Общие стили для всего приложения */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Стили для формы входа */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="password"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background: #5cb85c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #4cae4c;
+}
+
+form .notification {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Стили для списка задач */
+.todo-list {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.todo-list h2 {
+    text-align: center;
+    color: #333;
+}
+
+.todo-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+.todo-list input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.todo-list .todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.todo-list .todo-actions button {
+    background: #d9534f;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todo-list .todo-actions button:hover {
+    background: #c9302c;
+}
+
+.todo-list .todo-actions .edit-button {
+    background: #f0ad4e;
+}
+
+.todo-list .todo-actions .edit-button:hover {
+    background: #ec971f;
+}
