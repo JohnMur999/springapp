@@ -1,12 +1,5 @@
 package com.johnmur.springapp.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-
-import jakarta.persistence.Table;
-import org.springframework.data.annotation.Id;
-
 import jakarta.persistence.*;
 import lombok.Data;
 import java.util.Set;
@@ -15,9 +8,9 @@ import java.util.Set;
 @Data
 @Table(name="users")
 public class User {
-    @jakarta.persistence.Id
+
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id")
     private Long id;
 
@@ -33,5 +26,4 @@ public class User {
 
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<TodoItem> todoItems;
-
 }
